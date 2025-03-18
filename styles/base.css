@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* Ensure the body fills the viewport */
+}
+
+header {
+    background-color: #0c4090;
+    color: white;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #444;
+}
+
+nav a {
+    color: white;
+    padding: 5px 100px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 60% auto;
+    gap: 20px;
+    flex: 1;
+    /* Expand main to fill remaining vertical space */
+}
+
+.card {
+    padding: 20px;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: grid;
+    gap: 20px;
+}
+
+h2 {
+    margin: 0;
+    background-color: #0c4090;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#photo {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* Ensure it's displayed as a block-level element */
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: #0c4090;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.content {
+    display: flex;
+    align-items: flex-start;
+}
+
+#countryFlag {
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.content p {
+    margin: 0 auto;
+}
+
+.card img {
+    width: 25%;
+    border-radius: 5px;
+}
+
+.second_card {
+    margin: 0 0 auto 0;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
