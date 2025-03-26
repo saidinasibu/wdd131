@@ -1,15 +1,25 @@
-const inputs = document.querySelector('#bom');
-const button = document.querySelector('button');
-const list = document.querySelector('______');
+const input = document.querySelector("#favchap")
+const button = document.querySelector("button")
+const list = document.querySelector("#list")
+const li = document.createElement("li")
+const deleteButton = document.createElement("button")
+input.value = '';
 
-const li = document.createElement('li');
+function addChapter(input) {
+    if (input.value.trim() !== null) {
+        li.textContent = input.value;
+        deleteButton.textContent = '❌';
+        li.append(deleteButton);
+        list.append(li);
+    } else {
+        return input.focus();
+    }
+}
 
-const deleteButton = document.createElement('button')
-li.textContent = inputs.value
+function deleteChapter(li) {
+    list.removeChild(li);
+    input.focus();
+}
 
-deleteButton.textContent = '❌';
-
-li.append(deleteButton);
-
-
-list.append(li);
+button.addEventListener('click', addChapter(input))
+deleteButton.addEventListener('click', deleteChapter(li))
