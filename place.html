@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namibia - Information and Weather</title>
+    <meta name="description" content="This website contains information about a specific place">
+    <meta name="author" content="Nasibu Saidi">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Namibia</h1>
+    </header>
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/namibia_wide.webp" media="(min-width: 768px)">
+                <img src="images/namibia_vertical.webp" alt="desert" class="hero-image">
+            </picture>
+        </div>
+        <section class="data">
+            <h2>Data</h2>
+            <div class="content">
+                <ul>
+                    <li><strong>Area:</strong> 824,292 sq km</li>
+                    <li><strong>Population:</strong> 2,963,000</li>
+                    <li><strong>Capital:</strong> Windhoek</li>
+                    <li><strong>Languages:</strong> English, Afrikans, Oshiwambo</li>
+                    <li><strong>Currency:</strong> Namibian Dollar</li>
+                    <li><strong>Time Zone:</strong> GMT+2</li>
+                    <li><strong>Calling Code:</strong> +264</li>
+                    <li><strong>Internet TLD:</strong> .na</li>
+                </ul>
+            </div>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <div class="weather-icon">
+                <img src="images/weather_icon.svg" alt="Weather Icon">
+            </div>
+            <div class="weather-content">
+                <p><strong>Temperature:</strong> 16°C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> 5 km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windChill">N/A</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Nasibu Saidi, Windhoek, Namibia</p>
+        <p class="lastModified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
