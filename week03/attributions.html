@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributions - Discover Guatemala</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="site-name">GuatemaLinda</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Image Attributions</h2>
+            <ul>
+                <li><a href="https://mediaim.expedia.com/destination/1/74ddc5a8bc392ba990ada31c1bf76007.jpg">Antigua</a>
+                    - Photo by Expedia.com</li>
+                <li><a href="https://belize.com/wp-content/uploads/2022/11/tikal-overview.webp">Tikal</a> - Photo by
+                    Belice.com</li>
+                <li><a
+                        href="https://www.guateadventure.com/wp-content/uploads/2021/06/alexander-schimmeck-lYe4stnuZxs-unsplash-e1625959535505.jpg">Lake
+                        Atitlán</a> - Photo by Alexander Schimmeck</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Discover Guatemala</p>
+        <p class="lastModified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>

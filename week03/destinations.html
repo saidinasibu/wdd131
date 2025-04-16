@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Destinations - Discover Guatemala</title>
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <script defer src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="site-name">GuatemaLinda</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="attributions.html">Attributions</a></li>
+                </ul>
+                <button class="hamburger" aria-label="Menu">&#9776;</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Tourist Destinations</h2>
+            <article>
+                <h3>Antigua</h3>
+                <img src="images/antigua_guatemala.webp" alt="Tikal">
+                <p>Ancient city with a representative architecture.</p>
+            </article>
+            <h3>Tikal</h3>
+            <img src="images/tikal_guatemala.webp" alt="Tikal">
+            <p>Ancient Mayan city and UNESCO World Heritage site.</p>
+            </article>
+            <article>
+                <h3>Lake Atitlán</h3>
+                <img src="images/atitlan_guatemala.webp" alt="Lake Atitlán">
+                <p>Beautiful lake surrounded by volcanoes and traditional Mayan villages.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> GuatemaLinda</p>
+        <p class="lastModified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
+    <script>
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+        document.getElementById("lastModified").textContent = document.lastModified;
+    </script>
+</body>
+
+</html>
