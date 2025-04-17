@@ -2,79 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Review</title>
-    <meta name="description" content="WDD 131 - Product Review Form">
-    <meta name="author" content="Nasibu Saidi">
-    <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
-
+    <link rel="stylesheet" href="styles/form.css" />
 </head>
 
 <body>
     <header>
         <h1>Product Review</h1>
     </header>
+
     <main>
-        <form action="review.html" method="get">
+        <form>
             <fieldset>
-                <legend>Product Name</legend>
-                <label for="product">Choose a Product ...</label>
+                <label for="product">Product Name</label><br />
                 <select id="product" name="product" required>
-                    <option value="" disabled selected>Select a Product ...</option>
+                    <option value="" disabled selected>Choose a Product ...</option>
                 </select>
             </fieldset>
+
             <fieldset>
                 <legend>Overall Rating</legend>
                 <div class="rating">
-                    <input type="radio" id="star1" name="rating" value="1" required>
-                    <label for="star1">★</label>
-                    <input type="radio" id="star2" name="rating" value="2">
-                    <label for="star2">★★</label>
-                    <input type="radio" id="star3" name="rating" value="3">
-                    <label for="star3">★★★</label>
-                    <input type="radio" id="star4" name="rating" value="4">
-                    <label for="star4">★★★★</label>
-                    <input type="radio" id="star5" name="rating" value="5">
-                    <label for="star5">★★★★★</label>
+                    <label><input type="radio" name="rating" value="1" required />★</label>
+                    <label><input type="radio" name="rating" value="2" />★★</label>
+                    <label><input type="radio" name="rating" value="3" />★★★</label>
+                    <label><input type="radio" name="rating" value="4" />★★★★</label>
+                    <label><input type="radio" name="rating" value="5" />★★★★★</label>
                 </div>
             </fieldset>
+
             <fieldset>
-                <legend>Date of Installation</legend>
-                <label for="installation-date">Date of Installation</label>
-                <input type="date" id="installation-date" name="installation-date" required>
+                <label for="install-date">Date of Installation</label><br />
+                <input type="date" id="install-date" name="install-date" required />
             </fieldset>
+
             <fieldset>
-                <legend>Which features did you find useful in the product? (Check all that apply)</legend>
+                <legend>Which features did you find useful in the product?<br /><small>(Check all that apply)</small>
+                </legend>
                 <div class="checkboxes">
-                    <input type="checkbox" id="durability" name="features" value="durability">
-                    <label for="durability">Durability</label>
-                    <input type="checkbox" id="ease-of-use" name="features" value="ease-of-use">
-                    <label for="ease-of-use">Ease of Use</label>
-                    <input type="checkbox" id="performance" name="features" value="performance">
-                    <label for="performance">Performance</label>
-                    <input type="checkbox" id="design" name="features" value="design">
-                    <label for="design">Design</label>
+                    <label><input type="checkbox" name="features" value="durability" /> Durability</label><br />
+                    <label><input type="checkbox" name="features" value="ease-of-use" /> Ease of Use</label><br />
+                    <label><input type="checkbox" name="features" value="performance" /> Performance</label><br />
+                    <label><input type="checkbox" name="features" value="design" /> Design</label>
                 </div>
             </fieldset>
+
             <fieldset>
-                <legend>Written Review (Optional)</legend>
-                <label for="review">Written Review</label>
-                <textarea id="review" name="review"></textarea>
+                <label for="written-review">Written Review <span class="optional">(Optional)</span></label><br />
+                <textarea id="written-review" name="written-review" rows="4"></textarea>
             </fieldset>
+
             <fieldset>
-                <legend>Your Name (Optional)</legend>
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name">
+                <label for="username">Your Name <span class="optional">(Optional)</span></label><br />
+                <input type="text" id="username" name="username" />
             </fieldset>
-            <input type="submit" value="Post Review">
+
+            <input type="submit" value="Post Review" />
         </form>
     </main>
+
     <footer>
-        <p>© <span id="currentyear"></span>👌Nasibu Saidi👌 Namibia, Windhoek</p>
+        <p>© <span id="currentyear"></span> Nasibu Saidi, Windhoek, Namibia</p>
         <p class="lastModified">Last Modified: <span id="lastModified"></span></p>
     </footer>
+
     <script src="scripts/form.js"></script>
 </body>
 

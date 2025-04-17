@@ -1,105 +1,73 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #f7f7f7;
     margin: 0;
+    padding: 0;
 }
 
 header {
-    background-color: #ca2ad9;
+    background-color: #400036;
     color: white;
-    padding: 10px;
     text-align: center;
+    padding: 1rem;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-form {
-    background-color: #ecabf2;
-    padding: 20px;
+    background-color: #e6e0eb;
+    max-width: 500px;
+    margin: 1rem auto;
+    padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-fieldset {
+form fieldset {
     border: none;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
-legend {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+form label {
+    font-weight: bold;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input,
 select,
+input[type="text"],
+input[type="date"],
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
     border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.rating input {
+    margin: 0 0.2rem;
 }
 
 input[type="submit"] {
-    background-color: #ca2ad9;
-    color: white;
-    border: none;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 15px;
-    font-size: 1.2em;
 }
 
 input[type="submit"]:hover {
-    background-color: #ca2ad9;
+    background-color: #ddd;
 }
 
-.rating {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.rating input[type="radio"] {
-    display: none;
-}
-
-.rating label {
-    font-size: 2em;
-    color: #010000;
-}
-
-.rating input[type="radio"]:checked+label {
-    color: gold;
+.optional {
+    color: #666;
+    font-size: 0.9em;
 }
 
 footer {
-    background-color: #ca2ad9;
+    background-color: #400036;
     color: white;
     text-align: center;
-    padding: 10px;
-}
-
-.checkboxes {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 10px 20px;
-    align-items: center;
+    padding: 1rem;
+    font-size: 0.9em;
 }

@@ -1,28 +1,19 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const products = [
-        { id: "fc-1888", name: "flux capacitor", avgRating: 4.5 },
-        { id: "fc-2050", name: "power laces", avgRating: 4.7 },
-        { id: "fs-1987", name: "time circuits", avgRating: 3.5 },
-        { id: "ac-2000", name: "low voltage reactor", avgRating: 3.9 },
-        { id: "jj-1969", name: "warp equalizer", avgRating: 5.0 }
-    ];
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = document.lastModified;
 
-    const productSelect = document.getElementById("product");
-    products.forEach(product => {
-        const option = document.createElement("option");
-        option.value = product.id;
-        option.textContent = product.name;
-        productSelect.appendChild(option);
-    });
+const productList = [
+    "Super Blender 3000",
+    "Eco Kettle",
+    "Smartwatch Pro",
+    "Wireless Charger",
+    "Noise Cancelling Headphones"
+];
 
-    const currentYearSpan = document.getElementById("currentyear");
-    const lastModifiedSpan = document.getElementById("lastModified");
+const productSelect = document.getElementById("product");
 
-    if (currentYearSpan) {
-        currentYearSpan.textContent = new Date().getFullYear();
-    }
-
-    if (lastModifiedSpan) {
-        lastModifiedSpan.textContent = document.lastModified;
-    }
+productList.forEach(product => {
+    const option = document.createElement("option");
+    option.value = product.toLowerCase().replace(/ /g, "-");
+    option.textContent = product;
+    productSelect.appendChild(option);
 });
